@@ -229,14 +229,14 @@ h1, h2, h3, h4, h5, h6 {
   visibility: visible;
 }
 .fh5co-tab-wrap .fh5co-tab-content .fh5co-content-inner {
-  padding: 7em 2em 2em 2em;
+  padding: 7em 2em 4em 2em;
   float: left;
   width: 100%;
   position: relative;
 }
 @media screen and (max-width: 768px) {
   .fh5co-tab-wrap .fh5co-tab-content .fh5co-content-inner {
-    padding: 4em .5em 2em .5em;
+    padding: 4em .5em 4em .5em;
   }
 }
 
