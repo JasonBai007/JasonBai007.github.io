@@ -57,7 +57,7 @@
 	};
 
 	var tabClickTrigger = function() {
-		$('.fh5co-tab-menu a').on('click', function(event) {
+		$('.fh5co-tab-menu a').click(function(event) {
 		// $('.fh5co-tab-menu').on('click', 'a', function(event) {
 			// event.preventDefault();
 			var $this = $(this),
