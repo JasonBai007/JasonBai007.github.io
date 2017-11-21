@@ -57,9 +57,9 @@
 	};
 
 	var tabClickTrigger = function() {
-		// $('.fh5co-tab-menu a').on('click', function(event) {
-		$(document).on('click', '.fh5co-tab-menu a', function(event) {
-			event.preventDefault();
+		$('.fh5co-tab-menu a').on('click', function(event) {
+		// $('.fh5co-tab-menu').on('click', 'a', function(event) {
+			// event.preventDefault();
 			var $this = $(this),
 				data = $this.data('tab'),
 				pie = $this.data('pie');

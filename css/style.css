@@ -123,6 +123,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 .fh5co-tab-wrap .fh5co-tab-menu li a {
+  cursor: pointer;
   padding: 2em 1em 1em 1em;
   position: relative;
   color: rgba(255, 255, 255, 0.5);
