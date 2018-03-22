@@ -56,7 +56,7 @@
   }
 
   var tabClickTrigger = function() {
-    $('.fh5co-tab-menu li').mouseup(function(event) {
+    $('.fh5co-tab-menu li').mouseenter(function(event) {
       // $('.fh5co-tab-menu').on('click', 'a', function(event) {
       // event.preventDefault();
       var $this = $(this).children('a'),
