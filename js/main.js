@@ -56,10 +56,10 @@
   }
 
   var tabClickTrigger = function() {
-    $('.fh5co-tab-menu a').click(function(event) {
+    $('.fh5co-tab-menu li').mouseup(function(event) {
       // $('.fh5co-tab-menu').on('click', 'a', function(event) {
       // event.preventDefault();
-      var $this = $(this),
+      var $this = $(this).children('a'),
         data = $this.data('tab'),
         pie = $this.data('pie')
 
