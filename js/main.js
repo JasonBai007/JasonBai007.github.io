@@ -21,7 +21,6 @@
       return isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()
     }
   }
-
   var getHeight = function() {
     var extraHeight = 0
 
@@ -56,31 +55,59 @@
   }
 
   var tabClickTrigger = function() {
-    $('.fh5co-tab-menu li').mouseenter(function(event) {
-      // $('.fh5co-tab-menu').on('click', 'a', function(event) {
-      // event.preventDefault();
-      var $this = $(this).children('a'),
-        data = $this.data('tab'),
-        pie = $this.data('pie')
+    if (window.orientation) {
+      $('.fh5co-tab-menu li').mouseenter(function(event) {
+        // $('.fh5co-tab-menu').on('click', 'a', function(event) {
+        // event.preventDefault();
+        var $this = $(this).children('a'),
+          data = $this.data('tab'),
+          pie = $this.data('pie')
 
-      // add/remove active class
-      $('.fh5co-tab-menu li').removeClass('active')
-      $this.closest('li').addClass('active')
+        // add/remove active class
+        $('.fh5co-tab-menu li').removeClass('active')
+        $this.closest('li').addClass('active')
 
-      $('.fh5co-tab-content.active').addClass('animated fadeOutDown')
+        $('.fh5co-tab-content.active').addClass('animated fadeOutDown')
 
-      setTimeout(function() {
-        $('.fh5co-tab-content.active').removeClass('active animated fadeOutDown fadeInUp')
-        $('.fh5co-tab-content[data-content="' + data + '"]').addClass('animated fadeInUp active')
-        getHeight()
-      }, 500)
-
-      if (pie === 'yes') {
         setTimeout(function() {
-          pieChart()
-        }, 800)
-      }
-    })
+          $('.fh5co-tab-content.active').removeClass('active animated fadeOutDown fadeInUp')
+          $('.fh5co-tab-content[data-content="' + data + '"]').addClass('animated fadeInUp active')
+          getHeight()
+        }, 500)
+
+        if (pie === 'yes') {
+          setTimeout(function() {
+            pieChart()
+          }, 800)
+        }
+      })
+    } else {
+      $('.fh5co-tab-menu li').click(function(event) {
+        // $('.fh5co-tab-menu').on('click', 'a', function(event) {
+        // event.preventDefault();
+        var $this = $(this).children('a'),
+          data = $this.data('tab'),
+          pie = $this.data('pie')
+
+        // add/remove active class
+        $('.fh5co-tab-menu li').removeClass('active')
+        $this.closest('li').addClass('active')
+
+        $('.fh5co-tab-content.active').addClass('animated fadeOutDown')
+
+        setTimeout(function() {
+          $('.fh5co-tab-content.active').removeClass('active animated fadeOutDown fadeInUp')
+          $('.fh5co-tab-content[data-content="' + data + '"]').addClass('animated fadeInUp active')
+          getHeight()
+        }, 500)
+
+        if (pie === 'yes') {
+          setTimeout(function() {
+            pieChart()
+          }, 800)
+        }
+      })
+    }
   }
 
   // Document on load.
