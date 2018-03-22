@@ -55,7 +55,7 @@
   }
 
   var tabClickTrigger = function() {
-    if (window.orientation) {
+    if (window.orientation !== undefined) {
       $('.fh5co-tab-menu li').mouseenter(function(event) {
         // $('.fh5co-tab-menu').on('click', 'a', function(event) {
         // event.preventDefault();
