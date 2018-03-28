@@ -420,6 +420,11 @@ li, ul {
 	        box-shadow: 0 0 10px rgba(45, 45, 45, 0.2);
 }
 
+/* 小白补充 */
+.bref {
+	text-align: justify;
+}
+
 
 
 /* ====================
