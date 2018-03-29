@@ -30,7 +30,6 @@ $(window).on('load', function() {
     return false
   })
 })
-
 ;(function($) {
   /*------------------
   		HEADER
@@ -119,45 +118,8 @@ $(window).on('load', function() {
   new WOW().init()
 
   /*------------------
-		CONTACT FORM
+		COUNTUP
 	--------------------*/
-  $('#contact-form').on('submit', function() {
-    var send_btn = $('#send-form'),
-      form = $(this),
-      formdata = $(this).serialize(),
-      chack = $('#form-chack')
-    send_btn.text('Wait...')
+  $('.numbers .counter').countUp({ delay: 10, time: 1500 })
 
-    function reset_form() {
-      $('#name').val('')
-      $('#email').val('')
-      $('#massage').val('')
-    }
-
-    $.ajax({
-      url: $(form).attr('action'),
-      type: 'POST',
-      data: formdata,
-      success: function(text) {
-        if (text == 'success') {
-          send_btn.addClass('done')
-          send_btn.text('Success')
-          setTimeout(function() {
-            reset_form()
-            send_btn.removeClass('done')
-            send_btn.text('Massage')
-          }, 2500)
-        } else {
-          reset_form()
-          send_btn.addClass('error')
-          send_btn.text('Error')
-          setTimeout(function() {
-            send_btn.removeClass('error')
-            send_btn.text('Massage')
-          }, 5000)
-        }
-      }
-    })
-    return false
-  })
 })(jQuery)

@@ -589,6 +589,29 @@ li, ul {
 	transition: all 0.4s ease 0s;
 }
 
+/* ====================
+  Numbers Section
+=======================*/
+.numbers {
+	padding: 80px 0 60px;
+	background: url(../img/p-dark.png);
+	background-attachment: fixed;
+}
+.numbers i {
+	color: #fff;
+	font-size: 40px;
+	margin-bottom: 15px;
+}
+.numbers h3 {
+	color: #fff;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+.numbers p {
+	color: #fff;
+	margin-bottom: 20px;
+}
 
 
 /* ====================
