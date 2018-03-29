@@ -800,6 +800,10 @@ li, ul {
 	line-height: normal;
 }
 
+#author {
+	color: inherit;
+	text-decoration: underline;
+}
 
 
 /* Responsive
