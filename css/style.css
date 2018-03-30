@@ -966,7 +966,8 @@ li, ul {
 	top: 0;
 	left: 0;
 	background-image: url("../img/bg.jpg");
-	background-position: center center;
+	/* background-position: center center; */
+	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 }
