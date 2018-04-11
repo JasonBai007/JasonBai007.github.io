@@ -122,4 +122,12 @@ $(window).on('load', function() {
 	--------------------*/
   $('.numbers .counter').countUp({ delay: 10, time: 1500 })
 
+  /*------------------
+		DOWNLOAD CV
+	--------------------*/
+  $('.dlcv').click(function (e) {
+    e.preventDefault()
+    alert('为了防止隐私外泄，暂缓开通')
+  })
+
 })(jQuery)
