@@ -710,15 +710,15 @@ li, ul {
 	width: 100%;
 	text-align: center;
 	left: 0;
-	top: 50%;
-	margin-top: -27px;
+	top: 50px;
+	margin-top: 0;
 	-webkit-transition: all 0.4s;
 	-o-transition: all 0.4s;
 	transition: all 0.4s;
 }
 .service-item .serv-icon i {
 	color: #333;
-	font-size: 50px;
+	font-size: 30px;
 	-webkit-transition: all 0.3s cubic-bezier(0.47, 0, 0.75, 0.72) 0s;
 	-o-transition: all 0.3s cubic-bezier(0.47, 0, 0.75, 0.72) 0s;
 	transition: all 0.3s cubic-bezier(0.47, 0, 0.75, 0.72) 0s;
@@ -726,8 +726,8 @@ li, ul {
 .service-item .serv-content {
 	padding-top: 50px;
 	position: relative;
-	bottom: -30px;
-	opacity: 0;
+	bottom: 0;
+	opacity: 1;
 	-webkit-transition: all 0.2s cubic-bezier(0.47, 0, 0.75, 0.72) 0s;
 	-o-transition: all 0.2s cubic-bezier(0.47, 0, 0.75, 0.72) 0s;
 	transition: all 0.2s cubic-bezier(0.47, 0, 0.75, 0.72) 0s;
@@ -741,7 +741,7 @@ li, ul {
 	font-size: 15px;
 	line-height: 22px;
 }
-.service-item:hover .serv-icon {
+/* .service-item:hover .serv-icon {
 	top: 50px;
 	margin-top: 0;
 }
@@ -754,7 +754,7 @@ li, ul {
 	-webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
-}
+} */
 
 
 
@@ -957,7 +957,7 @@ li, ul {
 =======================*/
 .promotion-section {
 	position: relative;
-	padding: 150px 0;
+	padding: 80px 0;
 }
 .promotion-bg {
 	position: absolute;
@@ -992,7 +992,178 @@ li, ul {
 	color: #fff;
 }
 
-
+/*==============================
+= Prices Section               =
+==============================*/
+.pricing-table {
+  position: relative;
+  border: 1px solid #f2f2f2;
+  transition: all 0.4s;
+}
+.pricing-table:hover {
+  box-shadow: 1px 1px 3px #ccc;
+}
+.pricing-header {
+  position: relative;
+  z-index: 1;
+  height: 80px;
+  padding: 14px;
+  pointer-events: none;
+  border-bottom: 1px solid #f2f2f2;
+}
+.pricing-header h3 {
+  margin-top: 0;
+}
+.currency,
+.value {
+  font-size: 3rem;
+  font-weight: 300;
+}
+.duration {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #000;
+  text-transform: uppercase;
+}
+.duration::before {
+  content: '/';
+  margin-right: 2px;
+}
+.pricing-body {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.pricing-features {
+  width: 700px;
+  margin-bottom: 0;
+  list-style: none;
+}
+.pricing-features:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.pricing-features li {
+  width: 100px;
+  float: left;
+  padding: 1.6em 14px;
+  font-size: 1.4rem;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-bottom: 1px solid #f2f2f2;
+}
+.pricing-features em {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.pricing-footer {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  /* on mobile it covers the .pricing-header */
+  height: 80px;
+  width: 100%;
+}
+.pricing-footer::after {
+  /* right arrow visible on mobile */
+  content: '';
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 20px;
+  width: 20px;
+}
+.pricing-footer .firsta {
+	border: 0;
+	background: #757a86;
+	color: #fff;
+	border-radius: 0;
+}
+.select {
+  position: relative;
+  z-index: 1;
+  display: block;
+  height: 100%;
+  /* hide button text on mobile */
+  overflow: hidden;
+  white-space: nowrap;
+  color: transparent;
+}
+.select .icon {
+  position: absolute;
+  right: 0;
+  height: 80px;
+  margin-right: 5px;
+  line-height: 80px;
+  font-size: 30px;
+  text-align: right;
+}
+.margin-bottom-xs-40 {
+	margin-bottom: 40px;
+}
+@media only screen and (min-width: 768px) {
+  .pricing-header {
+    height: auto;
+    padding: 1.9em 0.9em 1.6em;
+    pointer-events: auto;
+    text-align: center;
+  }
+  .value {
+    font-size: 5rem;
+    font-weight: 300;
+    line-height: 1;
+  }
+  .currency {
+    display: inline-block;
+    margin-top: 10px;
+    vertical-align: top;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .duration {
+    font-size: 1.4rem;
+  }
+  .pricing-body {
+    overflow-x: visible;
+  }
+  .pricing-features {
+    width: auto;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  .pricing-features li {
+    float: none;
+    width: auto;
+    padding: 8px;
+  }
+  .pricing-features em {
+    display: inline-block;
+    margin-bottom: 0;
+    font-style: normal;
+  }
+  .pricing-footer {
+    position: relative;
+    height: auto;
+    padding: 0;
+    text-align: center;
+  }
+  .pricing-footer::after {
+    display: none;
+  }
+  .pricing-footer .btn {
+    margin-left: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+}
 
 /* ====================
   Contact Section
