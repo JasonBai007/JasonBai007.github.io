@@ -10,19 +10,26 @@
 const Koa = require('koa')
 const staticServer = require('koa-static')
 const logger = require('koa-logger')
+const router = require('koa-router')();
+const bodyParser = require('koa-bodyparser');
 const path = require('path')
-// const router = require('./router.js')
 
 
 const app = new Koa()
 app.use(logger())
+app.use(bodyParser());
 
 // 实现静态资源服务器
-console.log(__dirname)
 app.use(staticServer(__dirname))
 
+// 接收表单留言
+router.post('/mail', async (ctx) => {
+    ctx.status = 200
+    ctx.body = ctx.request.body
+})
+
 // 注册路由
-// app.use(router.routes()).use(router.allowedMethods())
+app.use(router.routes()).use(router.allowedMethods())
 
 // 监听端口
 app.listen(2000)
