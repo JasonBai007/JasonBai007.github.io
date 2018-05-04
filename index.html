@@ -468,13 +468,14 @@
 							</div>
 						</div>
 						<!-- Contact Form -->
-						<form class="cont-form" id="contact-form" action="/mail" method="POST">
+						<iframe src="#" name="hidden_iframe" style="display: none" id="hidden_iframe"></iframe>
+						<form class="cont-form" id="contact-form" action="/mail" method="POST" target="hidden_iframe">
 							<div class="row">
 								<div class="col-sm-6">
 									<input id="name" name="name" type="text" required placeholder="Your Name*">
 								</div>
 								<div class="col-sm-6">
-									<input id="email" name="email" type="email" required placeholder="Your Email*">
+									<input id="email" name="wechat" required placeholder="Your Wechat*">
 								</div>
 								<div class="col-sm-12">
 									<textarea id="massage" name="massage" required placeholder="Your Massage*"></textarea>
