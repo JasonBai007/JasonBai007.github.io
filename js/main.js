@@ -127,7 +127,7 @@ $(window).on('load', function() {
 	--------------------*/
   $('.dlcv').click(function (e) {
     e.preventDefault()
-    alert('为了防止隐私外泄，暂缓开通')
+    alert('暂缓开通')
   })
 
 })(jQuery)
