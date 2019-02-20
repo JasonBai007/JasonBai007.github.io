@@ -1347,4 +1347,7 @@ ul {
     .intro-inner .intro-content h2 {
         font-size: 27px;
     }
+    .resume-item h2 {
+        font-size: 16px;
+    }
 }
