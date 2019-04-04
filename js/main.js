@@ -125,9 +125,9 @@ $(window).on('load', function() {
   /*------------------
 		DOWNLOAD CV
 	--------------------*/
-  $('.dlcv').click(function (e) {
-    e.preventDefault()
-    alert('暂缓开通')
-  })
+  // $('.dlcv').click(function (e) {
+  //   e.preventDefault()
+  //   alert('暂缓开通')
+  // })
 
 })(jQuery)
