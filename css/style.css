@@ -690,7 +690,7 @@ ul {
 
 .about-text h2 {
     font-size: 35px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .about-text p ins {
@@ -751,6 +751,8 @@ ul {
 
 .bref {
     text-align: justify;
+    line-height: 40px;
+    margin-bottom: 10px;
 }
 
 /* ====================
@@ -1233,22 +1235,6 @@ ul {
 .footer-section .social-links a i {
     display: table-cell;
     vertical-align: middle;
-}
-
-.footer-section .social-links a.facebook {
-    background: #2D5DA1;
-}
-
-.footer-section .social-links a.twitter {
-    background: #1AB1E5;
-}
-
-.footer-section .social-links a.behance {
-    background: #2A71F3;
-}
-
-.footer-section .social-links a.dribbble {
-    background: #DF7EA5;
 }
 
 .footer-section p {
