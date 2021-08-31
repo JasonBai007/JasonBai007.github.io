@@ -1,2 +1,2 @@
 # JasonBai007.github.io
-我的个人主页代码备份
+已废弃，请移步：https://lubanseven.gitee.io/
