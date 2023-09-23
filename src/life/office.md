@@ -1,5 +1,10 @@
 # 日常办公
 
+## 解决 Github 无法访问的问题
+
+1. Windows 用户直接在应用商店搜索 `Watt Toolkit`，下载并安装
+2. 运行软件，在首页勾选 `Github`，然后点击顶部的 `一键加速`，即可
+
 ## Markdown 免费转 PDF
 
 1. 下载并安装 `VS Code` 代码编辑器
