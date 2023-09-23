@@ -1,0 +1,22 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/JasonBai007/blog.git",
+  "author": "JasonBai007 <byygkcg@163.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vuepress dev src --temp .temp --open",
+    "build": "vuepress build src",
+    "deploy": "sh deploy.sh"
+  },
+  "devDependencies": {
+    "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5",
+    "@vuepress/plugin-back-to-top": "^1.9.7",
+    "@vuepress/plugin-medium-zoom": "^1.9.7",
+    "vuepress": "^1.9.7"
+  },
+  "dependencies": {
+    "valine": "^1.4.18"
+  }
+}
