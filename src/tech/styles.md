@@ -149,7 +149,7 @@ document.documentElement.style.filter = "grayscale(100%)";
 
 ## 自动播放背景音乐
 
-<audio src="/windyhill.mp3" controls autoplay></audio>
+<audio src="https://lubanseven.gitee.io/store/images/blog/home/dream.m4a" controls autoplay></audio>
 
 由于浏览器的安全限制，我们在打开页面时几乎无法实现自动播放音乐，除非播放器静音，但也就没有了意义。直到发现好友轻松实现了这种效果。
 仔细测试发现，只有这种情况下可以：
