@@ -25,8 +25,8 @@
 - [BootCDN](https://www.bootcdn.cn/)（获取 cdn 资源）
 - [草料二维码](https://cli.im/)（制作自己的二维码）
 - [TinyPng](https://tinypng.com/)（在线压缩图片）
-- <a href="/tools/ImageToPDForXPS.zip" download="ImageToPDForXPS">ImageToPDForXPS</a>（图片转 PDF 神器）
+- <a href="https://lubanseven.gitee.io/store/images/blog/tools/ImageToPDForXPS.zip" download="ImageToPDForXPS">ImageToPDForXPS</a>（图片转 PDF 神器）
 - <a href="https://www.cockos.com/licecap/" target="_blank">LICEcap</a>（录屏成 GIF 工具）
-- <a href="/tools/ScreenToGif.zip" download="ScreenToGif">ScreenToGif</a>（录屏成 GIF 神器）
-- <a href="/tools/httrack_x64-3.49.2.zip" download="Httrack">Httrack</a>（扒网站 神器）
-- [海上冲浪](/blog/tech/surf.md)（冲浪教程）
+- <a href="https://lubanseven.gitee.io/store/images/blog/tools/ScreenToGif.zip" download="ScreenToGif">ScreenToGif</a>（录屏成 GIF 神器）
+- <a href="https://lubanseven.gitee.io/store/images/blog/tools/httrack_x64-3.49.2.zip" download="Httrack">Httrack</a>（扒网站 神器）
+- [海上冲浪](/blog/tech/surf.md)（冲浪教程）https://lubanseven.gitee.io/store/images/blog/
