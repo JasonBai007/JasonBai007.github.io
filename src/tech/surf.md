@@ -37,7 +37,7 @@
 
 #### 2. 下载并安装 `v2rayNG`
 
-![下载安卓版](/blog/life/fq/fq12.png)
+![下载安卓版](/life/fq/fq12.png)
 
 #### 3. 复制订阅地址
 
@@ -89,7 +89,7 @@ https://v2rayshare.com/wp-content/uploads/2023/08/20230812.txt
 
 解压后直接双击 exe 图标，不用安装，桌面右下角会出现 `v2rayNG` 小图标
 
-![下载软件](/blog/life/fq/fq1.png)
+![下载软件](/life/fq/fq1.png)
 
 #### 3. 添加订阅
 
@@ -101,7 +101,7 @@ https://bulinkbulink.com/freefq/free/master/v2
 https://v2rayshare.com/wp-content/uploads/2023/08/20230812.txt
 :::
 
-![添加订阅](/blog/life/fq/dingyue.png)
+![添加订阅](/life/fq/dingyue.png)
 
 #### 4. 更新订阅地址
 
@@ -111,7 +111,7 @@ https://v2rayshare.com/wp-content/uploads/2023/08/20230812.txt
 
 在主界面，任选一个节点，`Ctrl+A`选中所有节点，点击左上角`服务器`，选择`测试服务器真连接延迟（多选）`，测试所有节点，看哪些能用
 
-![测试节点](/blog/life/fq/fq3.png)
+![测试节点](/life/fq/fq3.png)
 
 #### 6. 选择节点并连接
 

@@ -29,4 +29,4 @@
 - <a href="https://www.cockos.com/licecap/" target="_blank">LICEcap</a>（录屏成 GIF 工具）
 - <a href="https://lubanseven.gitee.io/store/images/blog/tools/ScreenToGif.zip" download="ScreenToGif">ScreenToGif</a>（录屏成 GIF 神器）
 - <a href="https://lubanseven.gitee.io/store/images/blog/tools/httrack_x64-3.49.2.zip" download="Httrack">Httrack</a>（扒网站 神器）
-- [海上冲浪](/blog/tech/surf.md)（冲浪教程）https://lubanseven.gitee.io/store/images/blog/
+- [海上冲浪](/tech/surf.md)（冲浪教程）

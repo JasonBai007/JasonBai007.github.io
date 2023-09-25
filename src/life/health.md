@@ -20,7 +20,7 @@
 
 ## 追随倪师
 
-![倪海厦](/blog/nihaixia/nihaixia.png)
+![倪海厦](/nihaixia/nihaixia.png)
 
 ## 倪师视频
 

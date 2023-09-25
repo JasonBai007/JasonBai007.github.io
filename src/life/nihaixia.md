@@ -4,7 +4,7 @@
 跟随倪海厦大师，学习中医养生知识。
 :::
 
-![倪海厦](/blog/nihaixia/nihaixia.png)
+![倪海厦](/nihaixia/nihaixia.png)
 
 ## 倪师授课视频
 
