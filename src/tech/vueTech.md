@@ -4,6 +4,58 @@
 工欲善其事，必先利其器
 :::
 
+## 一款插件实现 office 文件在线预览
+
+[vue-office](https://501351981.github.io/vue-office/examples/docs/)支持 **word(.docx)、excel(.xlsx)、pdf** 等各类型 office 文件预览的 vue 组件集合，提供一站式 office 文件预览方案，**支持 vue2 和 3，也支持 React 等非 Vue 框架。**
+
+## 实现只加载一次 JS 文件
+
+- 不能单纯的判断是否已经插入了 script 标签，因为对应的 js 文件还没下载完。
+- 所以还需要一个全局的变量 `isFileLoaded`，在最外层判断是否下载完。
+- 同时还需要一个执行队列 `exeStack`，用来盛放待执行的函数。
+- js 文件一旦下载完，就一次性执行队列里面的函数
+
+```js
+mounted() {
+    // 只初始化一次执行队列
+    if (!window.exeStack) window.exeStack = []
+    this.insertScript()
+},
+methods: {
+    insertScript() {
+        // 如果js文件没有加载
+        if (!window.isFileLoaded) {
+
+            // 这时候需要把初始化函数推到一个队列里
+            window.exeStack.push(this.init)
+
+            // 开头肯定没有这个script标签，下面的逻辑只执行一次
+            // 执行完后，就有这个script标签了，所以，不可能执行第二次
+            if (!document.querySelector('.myScript')) {
+                let scriptDom = document.createElement('script')
+                scriptDom.src = "/path/yourJsFile.js"
+                scriptDom.classList.add('myScript')
+                // 这时候html里就有这个script标签了
+                document.head.appendChild(scriptDom)
+
+                // 第一次执行的时候，绑定onload事件，因为外层只执行一次，所以onload事件也只执行一次
+                scriptDom.onload = () => {
+                    // 一旦脚本下载下来，标记全局变量，这样最外层的if判断就只执行else分支了
+                    window.isFileLoaded = true
+                    // 一次性执行下方的执行队列
+                    window.exeStack.forEach(func => func())
+                }
+            }
+        } else {
+            // 如果已经加载了，就直接初始化实例
+            this.init()
+        }
+    },
+    // 依赖已经加载的js文件，初始化实例
+    init() {}
+}
+```
+
 ## 自定义 vue 代码片段
 
 **VS Code** 左下角`齿轮` > `User Snippets` > `vue.json`，替换成以下内容：
