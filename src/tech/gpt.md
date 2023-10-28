@@ -16,5 +16,4 @@
 **收藏不迷路！**
 
 - [https://nav.free2gpt.xyz/](https://nav.free2gpt.xyz/) :heart::heart::heart:
-- [https://e3.free-chat.asia/](https://e3.free-chat.asia/) :heart::heart:
-- [https://a1.free-chat.asia/](https://a1.free-chat.asia/) :heart:
+- [https://a1.free-chat.asia/](https://a1.free-chat.asia/) :heart::heart:

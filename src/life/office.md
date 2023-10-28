@@ -1,5 +1,9 @@
 # 日常办公
 
+## 搜索替代
+
+众所周知，[**百度**](https://www.baidu.com/)搜出来的结果广告居多。[**谷歌**](https://www.google.com/)又打不开，这里推荐使用微软的[**必应**](https://cn.bing.com/)搜索引擎。搜索结果质量很高。
+
 ## 解决 Github 无法访问的问题
 
 1. Windows 用户直接在应用商店搜索 `Watt Toolkit`，下载并安装
