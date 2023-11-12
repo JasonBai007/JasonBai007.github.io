@@ -4,6 +4,16 @@
 工欲善其事，必先利其器
 :::
 
+## 省市区数据
+
+已汇总到我的 Gitee 代码仓库 [area](https://gitee.com/lubanseven/area)中的 dist 文件夹
+
+- 原始数据来自 [Administrative-divisions-of-China](https://github.com/modood/Administrative-divisions-of-China)
+
+- 港澳台数据来自 [ChinaProvinceCityJsonData](https://github.com/wu-jianyong/ChinaProvinceCityJsonData)
+
+- 移动端级联选择器 [vue-pickers](https://www.npmjs.com/package/vue-pickers)
+
 ## replace 高级用法
 
 ```js

@@ -152,6 +152,18 @@
   <a class="itemWrap" target="_blank" href="https://lubanseven.gitee.io/mark-me">
     <img :src="$withBase('/projects/tools13.png')">
     <h4>印象文档</h4>
+  </a> 
+  <a class="itemWrap" target="_blank" href="https://gitee.com/lubanseven/area">
+    <img :src="$withBase('/projects/tools14.png')">
+    <h4>省市区</h4>
+  </a> 
+  <a class="itemWrap" target="_blank" href="https://lubanseven.gitee.io/area" style="opacity:0">
+    <img :src="$withBase('/projects/tools14.png')">
+    <h4>省市区</h4>
+  </a> 
+  <a class="itemWrap" target="_blank" href="https://lubanseven.gitee.io/area" style="opacity:0">
+    <img :src="$withBase('/projects/tools14.png')">
+    <h4>省市区</h4>
   </a>  
 </div>
 
