@@ -4,6 +4,20 @@
 工欲善其事，必先利其器
 :::
 
+## 深拷贝的另一种选择
+
+简单易用的深拷贝方法：
+
+```js
+const clone = JSON.parse(JSON.stringify(obj));
+```
+
+另外一种原生方法：
+
+```js
+const clone = structuredClone(obj);
+```
+
 ## 省市区数据
 
 已汇总到我的 Gitee 代码仓库 [area](https://gitee.com/lubanseven/area)中的 dist 文件夹
